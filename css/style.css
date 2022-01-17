@@ -84,8 +84,6 @@ page__body {
   width: 197px;
 }
 
-
-
 .page__header-desc {
   font-weight: 400;
   font-size: 16px;
@@ -202,7 +200,6 @@ a {
   margin-bottom: 10px;
   margin-right: 10px;
   margin-left: 10px;
- 
 }
 
 .page__main-subdirectory3 { 
@@ -273,13 +270,11 @@ a {
   margin-left: 23px;
 }
 
-
 .page__main-desc {
   color: #fff;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-
 }
 
 .page__main-text {
@@ -289,8 +284,6 @@ a {
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  /* margin-top: 14px;
-  margin-left: 23px; */
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
@@ -339,4 +332,254 @@ a {
   padding-bottom: 10px;
   padding-right: 46px;
   padding-left: 46px;
+}
+
+.page__main-products {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.page__main-products-menu,
+.page__main-manufacturers-menu {
+  background-color: #F9F5F0;
+  margin-top: 59px;
+  margin-bottom: 20px;
+}
+
+.page__main-products-menu-wrap,
+.page__main-manufacturers-menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 28px;
+  padding-right: 14px;
+}
+
+.page__main-products-desc,
+.page__main-manufacturers-desc {
+  display: flex;
+  font-family: Cuprum;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425C;
+}
+
+.page__main-products-link,
+.page__main-manufacturers-link {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 24px;
+  padding-left: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #EE3643;
+}
+
+.page__main-products-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page__main-products-item {
+  border: 1px solid #EAEAEA;
+  display: flex;
+}
+
+.page__main-products-item-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.page__main-products-item-wraper {
+  text-align: center;
+}
+
+.page__main-products-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.page__main-products-text span {
+  text-transform: uppercase;
+}
+
+.page__main-products-discount {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color:rgba(0, 0, 0, 0.315);
+}
+
+.page__main-products-price {
+  display: flex;
+  flex-direction: column;
+  margin-top: 13px;
+  margin-bottom: 21px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #EE3643;
+  padding-left: 32px;
+  padding-right: 44px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+  border-radius: 3px;
+}
+
+.page__main-manufacturers {
+  width: 940px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.page__main-manufacturers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.page__main-manufacturers-item-wrap {
+  display: flex;
+}
+
+.page__main-manufacturers-pic {
+  display: flex;
+  width: 220px;
+  height: 145px;
+  border: 1px solid #EAEAEA;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.page__main-services {
+  background-color: #F1F5F7;
+}
+
+.page__main-services-container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.page__main-services-wrap {
+  width: 400px;
+  padding-top: 64px;
+  padding-bottom: 21px;
+}
+
+.page__main-services-desc {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: Cuprum;
+  padding-bottom: 25px;
+}
+
+.page__main-services-text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: PT Sans;
+}
+
+.page__main-services-wraper {
+  display: flex;
+  align-items: inherit;
+  padding-bottom: 10px;
+}
+
+.page__main-services-services {
+  display: flex;
+  width: 240px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page__main-services-services-leaving {
+  background-color: #32425C;
+  color: white;
+  padding-left: 22px;
+  padding-right: 139px;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+}
+
+.page__main-services-services-guarantee {
+  background-color: #32425C;
+  color: white;
+  padding-left: 22px;
+  padding-right: 140px;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+}
+
+.page__main-services-services-credit {
+  background-color: #32425C;
+  color: white;
+  padding-left: 22px;
+  padding-right: 157px;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+}
+
+.page__main-services-services-shadow {
+  position: relative;
+  left: -9px;
+}
+
+.page__main-services-leaving {
+  width: 280px;
+  position: absolute;
+  margin-left: 265px;
+}
+
+
+.page__main-services-leaving-desc {
+  font-family: Cuprum;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425C;
+  margin-bottom: 30px;
+}
+
+.page__main-services-leaving-text {
+  font-family: PT Sans;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.page__main-services-img {
+  display: flex;
+  position: relative;
+  bottom: -80px;
+  margin-left: 220px;
+}
+
+.page__main-tehnomart {
+  background-color: #fff;
+  position: relative;
 }
