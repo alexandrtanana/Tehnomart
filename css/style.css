@@ -4,6 +4,7 @@ page-body {
   min-height: 100%;
 }
 
+
 /* Шапка */
 .page-header__top {
   background-color: #293449;
@@ -176,6 +177,8 @@ a {
   padding-right: 17px;
   margin-left: 14px;
 }
+
+/* Шапка каталога */
 
 /* Контент */
 .page-main__catalog {
@@ -677,6 +680,15 @@ p{
   margin-top: 25px;
   border: none;
 }
+
+
+/* Контент каталога */
+
+.page-main__container-wrap {
+  width: 940px;
+  margin: 0 auto;
+}
+
 
 /* Подвал */
 .page-footer__contact {
