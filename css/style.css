@@ -6,55 +6,51 @@ page-body {
 
 
 /* Шапка */
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-header__top {
   background-color: #293449;
-  color: #FFF;
-  display: flex;
-  flex-direction: row;
 }
 
 .page-header__container {
-  width: 940px;
+  max-width: 940px;
   min-height: 42px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
-.page-header__logo {
+.page-header__img {
   background-image: url(..//img/logo-background.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 220px;
-  position: absolute;
-  padding-top: 14px;
-  padding-bottom: 13px;
 }
 
 .page-header__menu {
   display: flex;
-  align-items: center;
-  margin-left: 260px;
+  color: #fff;
 }
 
 .page-header__search {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  color: #fff;
 }
 
 .page-header__bookmark {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  margin-left: 226px;
+  color: #fff;
 }
 
 .page-header__basket {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  margin-left: 73px;
+  color: #fff;
 }
 
 .page-header__link {
@@ -68,38 +64,22 @@ page-body {
   background-color: #F1F5F7;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  padding-top: 43px;
-  padding-bottom: 60px;
-}
 
-.page-header__wrap {
-  display: flex;
-  margin: 0 auto;
 }
 
 .page-header__contact {
   display: flex;
 }
 
-.page-header__desc {
-  width: 197px;
+.page-header__cabinet {
+  display: flex;
 }
 
-.page-header__desc {
+.page-header__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
   color: #EE3643;
-}
-
-.page-header__desc {
-  margin-right: 93px;
-  margin-left: 30px;
-}
-
-a {
-  text-decoration: none;
 }
 
 .page-header__tel {
@@ -122,21 +102,12 @@ a {
   padding-top: 10px;
 }
 
-.page-header__cabinet {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
 .page-header__registration,
 .page-header__signin {
   font-weight: 400;
   font-size: 21px;
   line-height: 21px;
   color: #000;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 24px;
-  padding-right: 24px;
   background-color: #fff;
 }
 
@@ -144,679 +115,15 @@ a {
     margin-right: 10px;
 }
 
-.page-header__nav {
-  margin: 0 auto;
-  padding-top: 45px;
-}
-
 .page-header__list {
   display: flex;
-}
-
-.page-header__item {
+  justify-content: space-between;
   background-color: #32425C;
-  padding-top: 16px;
-  padding-bottom: 20px;
-  width: 134px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.page-header__link {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-  color: #fff;
-}
-
-.header-link {
-  background-color: #63A63E;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 18px;
-  padding-right: 17px;
-  margin-left: 14px;
-}
-
-/* Шапка каталога */
-
-/* Контент */
-.page-main__catalog {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  width: 940px;
-  margin: 0 auto;
-  margin-top: 59px;
-}
-  
-.page-main__subdirectory1 { 
-  grid-area: 1 / 1 / 2 / 2; 
-  background-color: #FFBF47;
-  margin-bottom: 10px;
-  margin-right: 10px;
-}
-
-.page-main__subdirectory2 { 
-  grid-area: 1 / 2 / 2 / 3; 
-  background-color: #3BBCE3;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.page-main__subdirectory3 { 
-  grid-area: 1 / 3 / 2 / 4; 
-  background-color: #DC91D8;
-  margin-bottom: 10px;
-  margin-left: 10px; 
-}
-
-.page-main__subdirectory4 { 
-  grid-area: 2 / 3 / 3 / 4; 
-  background-color: #8ED78F;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-
-.page-main__subdirectory5 { 
-  grid-area: 3 / 3 / 4 / 4; 
-  background-color: #FFBF47;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
-.page-main__slider { 
-  grid-area: 2 / 1 / 4 / 3; 
-  background-image: url(..//img/perforators-img.png);
-  background-repeat: no-repeat;
-  margin-top: 10px;
-  margin-right: 10px;
-}
-
-.page-main__subdirectory1,
-.page-main__subdirectory2,
-.page-main__subdirectory3,
-.page-main__subdirectory4,
-.page-main__subdirectory5 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  padding-top: 21px;
-  padding-bottom: 22px;
-}
-  
-.page-main__desc { 
-  grid-area: 1 / 1 / 2 / 2; 
-}
-
-.page-main__text { 
-  grid-area: 2 / 1 / 3 / 2; 
-}
-
-.page-main__img {
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  grid-area: 1 / 2 / 3 / 3; 
-}
-
-
-.page-main__subdirectory-wrap {
-  display: grid;
-  align-items: baseline;
-  justify-items: start;
-  width: 150px;
-  margin-left: 23px;
-}
-
-.page-main__desc {
-  color: #fff;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-}
-
-.page-main__text {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.562);
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 100%;
-}
-
-.page-main__img-logo {
-  position: relative;
-}
-
-.page-main__desc-slider {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 36px;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.page-main__text-slider {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #fff;
-}
-
-.page-main__link-slider {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.page-main__slider-container {
-  margin-left: 24px;
-  margin-top: 23px;
-  margin-right: 24px;
-}
-
-.page-main__text-slider-wrap {
-  margin-top: 113px;
-}
-
-.page-main__link-slider {
-  background-color: #EE3643;
-  padding-top: 11px;
-  padding-bottom: 10px;
-  padding-right: 46px;
-  padding-left: 46px;
-}
-
-.page-main__products {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
 }
 
-.page-main__products-menu,
-.page-main__manufacturers-menu {
-  background-color: #F9F5F0;
-  margin-top: 59px;
-  margin-bottom: 20px;
-}
-
-.page-main__products-menu-wrap,
-.page-main__manufacturers-menu-wrap {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 28px;
-  padding-right: 14px;
-}
-
-.page-main__products-desc,
-.page-main__manufacturers-desc {
-  display: flex;
-  font-family: Cuprum;
-  flex-direction: column;
-  justify-content: center;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #32425C;
-}
-
-.page-main__products-link,
-.page-main__manufacturers-link {
-  display: flex;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 24px;
-  padding-left: 24px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+.page-header__link{
   color: #fff;
-  background-color: #EE3643;
-}
-
-.page-main__products-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.page-main__products-item {
-  border: 1px solid #EAEAEA;
-  display: flex;
-}
-
-.page-main__products-item-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 18px;
-  margin-right: 18px;
-}
-
-.page-main__products-item-wraper {
-  text-align: center;
-}
-
-.page-main__products-text {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-}
-
-.page-main__products-text span {
-  text-transform: uppercase;
-}
-
-.page-main__products-discount {
-  display: flex;
-  flex-direction: column;
-  margin-top: 7px;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 18px;
-  color:rgba(0, 0, 0, 0.315);
-}
-
-.page-main__products-price {
-  display: flex;
-  flex-direction: column;
-  margin-top: 13px;
-  margin-bottom: 21px;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 18px;
-  color: #fff;
-  background-color: #EE3643;
-  padding-left: 32px;
-  padding-right: 44px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
-  border-radius: 3px;
-}
-
-.page-main__manufacturers {
-  width: 940px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.page-main__manufacturers-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
-
-.page-main__manufacturers-item-wrap {
-  display: flex;
-}
-
-.page-main__manufacturers-pic {
-  display: flex;
-  width: 220px;
-  height: 145px;
-  border: 1px solid #EAEAEA;
-  margin-bottom: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.page-main__services {
-  background-color: #F1F5F7;
-}
-
-.page-main__services-container {
-  width: 940px;
-  margin: 0 auto;
-}
-
-.page-main__services-wrap {
-  width: 400px;
-  padding-top: 64px;
-  padding-bottom: 21px;
-}
-
-.page-main__services-desc {
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 30px;
-  font-family: Cuprum;
-  padding-bottom: 25px;
-}
-
-.page-main__services-text {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
-  font-family: PT Sans;
-}
-
-.page-main__services-wraper {
-  display: flex;
-  align-items: inherit;
-  padding-bottom: 10px;
-}
-
-.page-main__services-services {
-  display: flex;
-  width: 240px;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.page-main__services-services-leaving {
-  background-color: #32425C;
-  color: white;
-  padding-left: 22px;
-  padding-right: 139px;
-  padding-top: 14px;
-  padding-bottom: 18px;
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
-}
-
-.page-main__services-services-guarantee {
-  background-color: #32425C;
-  color: white;
-  padding-left: 22px;
-  padding-right: 140px;
-  padding-top: 14px;
-  padding-bottom: 18px;
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
-}
-
-.page-main__services-services-credit {
-  background-color: #32425C;
-  color: white;
-  padding-left: 22px;
-  padding-right: 157px;
-  padding-top: 14px;
-  padding-bottom: 18px;
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
-}
-
-.page-main__services-services-shadow {
-  position: relative;
-  left: -9px;
-}
-
-.page-main__services-leaving {
-  width: 280px;
-  position: absolute;
-  margin-left: 265px;
-}
-
-.page-main__services-leaving-desc {
-  font-family: Cuprum;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 30px;
-  color: #32425C;
-  margin-bottom: 30px;
-}
-
-.page-main__services-leaving-text {
-  font-family: PT Sans;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
-}
-
-.page-main__services-img {
-  display: flex;
-  position: relative;
-  bottom: -80px;
-  margin-left: 220px;
-}
-
-.page-main__tehnomart {
-  background-color: #fff;
-  position: relative;
-}
-
-.page-main__tehnomart-container {
-  display: flex;
-  width: 940px;
-  margin: 0 auto;
-  padding-bottom: 70px;
-  padding-top: 70px;
-}
-
-.page-main__tehnomart-features {
-  display: flex;
-  flex-direction: column;
-  margin-right: 160px;
-}
-
-.page-main__tehnomart-features-desc,
-.page-main__tehnomart-contacts-desc {
-  font-family: Cuprum;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
-.page-main__tehnomart-features-wrap {
-  margin-top: 24px;
-  margin-bottom: 2px;
-}
-
-.page-main__tehnomart-features-text,
-p{
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
-}
-
-.page-main__tehnomart-features-list {
-  margin-bottom: 27px;
-}
-
-.page-main__tehnomart-features-item {
-  display: flex;
-  align-items: center;
-}
-
-.page-main__tehnomart-features-features {
-  font-family: Cuprum;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  margin-left: 12px;
-  margin-bottom: 12px;
-}
-
-.page-main__tehnomart-features-link {
-  background-color: #EE3643;
-  color: #fff;
-  text-transform: uppercase;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-top: 41px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.page-main__tehnomart-contacts {
-  display: flex;
-  flex-direction: column;
-}
-
-.page-main__tehnomart-contacts-text {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
-  margin-top: 24px;
-  margin-bottom: 32px;
-}
-
-.page-main__tehnomart-contacts-contact {
-  background-color: #EE3643;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 25px;
-  border: none;
-}
-
-
-/* Контент каталога */
-
-.page-main__container-wrap {
-  width: 940px;
-  margin: 0 auto;
-}
-
-
-/* Подвал */
-.page-footer__contact {
-  background-color: #32425C;
-}
-
-.page-footer__contact-wrap {
-  width: 940px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 54px;
-}
-
-.page-footer__bottom {
-  background-color: #293449;
-}
-
-.page-footer__bottom-wrap {
-  width: 940px;
-  margin: 0 auto;
-}
-
-.page-footer__contact-img {
-  background-image: url("..//img/background-logo-footer.svg");
-  padding-top: 21px;
-  padding-bottom: 21px;
-  padding-left: 42px;
-  padding-right: 40px;
-  background-repeat: no-repeat;
-}
-
-.page-footer__contact-wraper {
-  width: 321px;
-}
-
-.page-footer__contact-addres,
-.page-footer__contact-number {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 24px;
-  color: #fff;
-  font-style: normal;
-  font-family: Cuprum;
-  margin-top: 22px;
-}
-
-.page-footer__wrap {
-  width: 550px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 37px;
-}
-
-.page-footer__nav-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.page__footer-nav-item-link {
-  font-family: Cuprum;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #fff;
-}
-
-.page-footer__list-catalog {
-  display: flex;
-  justify-content: end;
-  margin-top: 34px;
-}
-
-.page-footer__list-catalog-item {
-  margin-left: 58px;
-}
-
-.page__footer-list-catalog-link {
-  font-family: Cuprum;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: #FFD180;
-}
-
-.page-footer__bottom-wrap {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 36px;
-  padding-bottom: 34px;
-}
-
-.page-footer__bottom-сopyright {
-  font-family: Cuprum;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: #fff;
-}
-
-.page-footer__bottom-сopyright-t {
-  text-transform: uppercase;
-}
-
-.page-footer__bottom-list {
-  display: flex;
-}
-
-.page-footer__bottom-item-link {
-  color: #fff;
-}
-
-.page-footer__bottom-feedback,
-.page-footer__bottom-developed {
-  font-family: Cuprum;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-}
-
-.page-footer__bottom-feedback-mail, 
-.page-footer__bottom-developed-link {
-  color: #FFD180;
+  text-decoration: none;
 }
