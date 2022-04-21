@@ -16,29 +16,65 @@
    <header class="page-header">
       <div class="page-header__top">
          <div class="page-header__container">
-            <div class="page-header__img"><img class="page-header__logo" src="img/logo-technomart.svg" width="108" height="18"
-                  alt="Логотип сайта Техномарт"></div>
+            <div class="page-header__container-wrap">
+               <div class="page-header__img"><img class="page-header__logo" src="img/logo-technomart.svg" width="108"
+                     height="18" alt="Логотип сайта Техномарт">
+               </div>
+               <div class="page-header__search">
+                  <form class="page-header__search-form">
+                     <input class="page-header__search-input" type="text" placeholder="Поиск:">
+                     <!-- <button class="page-header__search-button" type="submit"></button> -->
+                  </form>
+               </div>
+            </div>
             <div class="page-header__menu">
-               <p class="page-header__search">Поиск:</p>
-               <p class="page-header__bookmark">Закладки:</p>
-               <p class="page-header__basket">Корзина:</p>
+
+               <p class="page-header__bookmark"><svg class="page-header__bookmark-icon" width="14" height="16"
+                     viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"
+                        fill="white" />
+                  </svg>
+                  Закладки: 0</p>
+               <p class="page-header__basket"><svg class="page-header__basket-icon" width="15" height="15"
+                     viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M4.5 15C5.32843 15 6 14.3284 6 13.5C6 12.6716 5.32843 12 4.5 12C3.67157 12 3 12.6716 3 13.5C3 14.3284 3.67157 15 4.5 15Z"
+                        fill="white" />
+                     <path
+                        d="M12.5 15C13.3284 15 14 14.3284 14 13.5C14 12.6716 13.3284 12 12.5 12C11.6716 12 11 12.6716 11 13.5C11 14.3284 11.6716 15 12.5 15Z"
+                        fill="white" />
+                     <path d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white" />
+                  </svg> Корзина: 0</p>
                <a class="page-header__link header-link" href="#">Офформить заказ</a>
             </div>
          </div>
       </div>
       <div class="page-header__bottom">
-         <div class="page-header__container">
-            <div class="page-header__contact">
-               <div class="page-header__desc">
-                  <p class="page-header__text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-               </div>
-               <div>
-                  <a class="page-header__tel" href="tel:+78125550555">+7(812)555-05-55</a>
-                  <address class="page-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-               </div>
+         <div class="page-header__bottom-container">
+
+            <div class="page-header__desc">
+               <p class="page-header__text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
             </div>
+            <div class="page-header__contact">
+               <a class="page-header__tel" href="tel:+78125550555"><svg width="19" height="19" viewBox="0 0 19 19"
+                     fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M15.572 18.985H14.631C10.502 18.497 7.47403 16.577 5.27203 14.121C3.06203 11.66 1.31803 8.49202 0.978027 4.22802V3.08402C1.05603 2.31002 1.43703 1.78002 1.87603 1.32702C2.42503 0.76602 3.25003 0.0440198 4.00203 0.0190198C4.55603 0.00101977 5.50203 0.39902 5.88103 0.91802C6.21003 1.36402 6.38503 2.25702 6.53703 2.92102C6.69103 3.59202 7.04203 4.56402 6.94503 5.21002C6.79703 6.21702 5.45803 6.64402 5.06603 7.37602C6.37303 10.511 8.50903 12.815 11.359 14.407C12.074 14.015 12.705 12.835 13.691 12.812C14.05 12.803 14.509 12.99 14.875 13.098C15.277 13.219 15.625 13.373 15.979 13.506C16.575 13.73 17.627 14.027 17.983 14.527C18.348 15.04 18.553 15.883 18.473 16.406C18.309 17.447 16.594 18.603 15.572 18.985Z"
+                        fill="#B7BFC8" />
+                  </svg> +7(812)555-05-55</a>
+               <address class="page-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+            </div>
+
             <div class="page-header__cabinet">
-               <a class="page-header__registration" href="blank.html">Войти</a>
+               <a class="page-header__registration" href="blank.html"><svg width="20" height="17" viewBox="0 0 20 17"
+                     fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5" />
+                     <path
+                        d="M16.177 15.01H11.3894V17H16.177C18.2513 17 19.038 15.19 19.0618 13.974V3.028C19.038 1.811 18.2513 0 16.177 0H11.3894V1.99H16.177C16.9761 1.99 17.1218 2.671 17.1389 3.047V13.951C17.1227 14.327 16.9761 15.01 16.177 15.01Z"
+                        fill="#C5C5C5" />
+                  </svg>
+                  Войти</a>
                <a class="page-header__signin" href="blank.html">Регистрация</a>
             </div>
          </div>
